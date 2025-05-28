@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body {
+  background-color: rgb(29, 29, 29);
+  font-family: Roboto;
+}
+
+header {
+  /* background-image: linear-gradient(rgba(45, 45, 45, 1) 60%, rgba(36, 36, 36, 1)); */
+  background-color: rgba(45, 45, 45, 1);
+  justify-content: space-between;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* logo and name */
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: beige;
+}
+.storeTitle{
+    font-size: 20px;
+    font-family: Lilita One;
+}
+
+.fa-gamepad {
+  font-size: 30px;
+  color: beige;
+} 
+
+
+
+
+
+/* navbar */
+.navbar-list{
+    display: flex;
+    column-gap: 40px;
+}
+
+.navbar-li{
+    padding: 5px;
+}
+
+.navbar-item{
+     font-size: 30px;
+     color: rgb(194, 194, 194);
+     font-weight: 100;
+}
+
+.navbar-item:hover{
+   color: rgb(241, 240, 240);
+}
+.navbar-item:hover .fa-user-plus{
+    color: rgb(184, 40, 40);
+}
+
+.signin-bar a{
+    font-size: 25px;
+}
+
+.signin-bar{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.fa-user-plus{
+   font-size: 20px;
+   color: rgb(194, 194, 194);
+}
