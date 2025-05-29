@@ -21,18 +21,22 @@
         </div>
     </section>
     <section class="form-section">
-        
-        <h3 class="form-title">Sign In</h3>
+        <h3 class="form-title">Sign Up</h3>
         <form class="form-class">
+            <input class="input-field" type="text" id="username" name="username" placeholder="Username" required>
             <input class="input-field" type="email" id="email-field" name="email" placeholder="Email" required>
             <input class="input-field" type="password" id="pass-field" name="password" placeholder="Password" required>
-            <button class="submit-btn" type="submit" id="submit-btn" name="submit-btn">sign in</button>
+            <input class="input-field" type="password" id="pass-field" name="password" placeholder="Repeat password" required>
+            <div class="birthDate-div">
+                <label for="birthdate">Birthday:</label>
+                <input type="date" id="birthdate" name="birthdate" required>
+            </div>
+            <div class="termsOfService-div">
+                <input type="checkbox" id="term-accept" name="term-checkbox" required>
+                <label for="term-accept">I accept <a class='terms-link' href="./terms.html" target="_blank">The terms of Service</a></label>
+            </div>
+            <button class="submit-btn" type="submit" id="submit-btn" name="submit-btn">sign up</button>
         </form>
-        <div class="divider">
-            <div class="line"></div>
-            <a class="register" href="../signupPage/signupPage.html">Don't have an account?</a>
-            <div class="line"></div>
-        </div>
     </section>
 </body>
 </html>
