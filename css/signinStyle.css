@@ -17,15 +17,20 @@ body{
     width: min(100%,675px);
 }
 
-.logo{
+.fa-house{
+    color: rgb(255, 145, 0);
+    font-size: 50px;
+}
+
+.decore-div{
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    color: beige;
+    color: rgb(255, 145, 0);
     font-size: 100px;
     backdrop-filter: blur(5px);
-    text-shadow: 3px 3px 5px rgb(131, 131, 122);
+    text-shadow: 3px 3px 1px beige;
     width: 100%;
     font-family: Lilita One;
     position: relative;
@@ -44,7 +49,7 @@ body{
 }
 
 .form-title{
-    color: beige;
+    color: antiquewhite;
     font-family: Lilita One;
     font-size: 50px;
 }
@@ -55,9 +60,9 @@ body{
 
 .input-field{
     font-size: 20px;
-    color: beige;
+    color: antiquewhite;
     border: none;
-    border-bottom: beige solid 2px;
+    border-bottom: antiquewhite solid 2px;
     background-color: rgb(29, 29, 29);
     margin-bottom: 50px;
     padding: 8px;
@@ -82,13 +87,13 @@ body{
     border: none;
     border-radius: 10px;
     font-size: 20px;
-    background-color: beige;
+    background-color: antiquewhite;
     padding: 8px;
     width: 100%;
 }
 
 .submit-btn:hover{
-    background-color: rgb(216, 216, 195);
+    background-color: rgb(248, 224, 193);
 }
 
 /* signup section */
@@ -102,7 +107,7 @@ body{
 
 .line{
     width: 100%;
-    border-bottom: beige solid 2px;
+    border-bottom: antiquewhite solid 2px;
 }
 
 .register{
@@ -119,10 +124,7 @@ body{
 
 
 }
-.fa-house{
-    color: beige;
-    font-size: 50px;
-}
+
 
 .termsOfService-div{
     margin-bottom: 30px;

@@ -1,0 +1,34 @@
+.profile-section{
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(1000px,100%);
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.profile-section img{
+    max-width: 184px;
+    border-radius: 50%;
+}
+
+.profile-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edit-profile-div{
+    width: 200px;
+    height: 200px;
+    background-color: bisque;
+}
+
+.profile-main-info-div{
+    display: flex;
+    align-items: center;
+}
+
+.about-info-div h5,h3,p{
+    width: min(500px,100%);
+}
