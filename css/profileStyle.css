@@ -1,34 +1,179 @@
-.profile-section{
-    background-color: brown;
-    margin-left: auto;
-    margin-right: auto;
-    width: min(1000px,100%);
-    /* display: flex;
-    flex-direction: column; */
+body{
+    background-image: url('../images/EldenRing-Wallpaper_5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.profile-section img{
-    max-width: 184px;
-    border-radius: 50%;
+.main-header{
+    box-shadow: 0px 10px 30px black;
+}
+
+.profile-section{
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
 }
 
 .profile-header{
+    background:
+        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
+        linear-gradient(127deg, rgba(45, 45, 45), rgba(0, 255, 0, 0) 70%),
+        linear-gradient(336deg, rgba(250, 235, 215), rgba(0, 0, 255, 0) 80%);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
-
-.edit-profile-div{
-    width: 200px;
-    height: 200px;
-    background-color: bisque;
+    padding: 10px;
+    width: min(1000px,100%);
 }
 
 .profile-main-info-div{
     display: flex;
-    align-items: center;
+    column-gap: 20px;
 }
 
-.about-info-div h5,h3,p{
-    width: min(500px,100%);
+
+.profile-section img{
+    max-width: 184px;
+    border-radius: 10%;
+}
+
+
+.about-info-div{
+    padding-top: 10px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.about-info-div h3{
+    font-size: 25px;
+}
+
+.extra-info-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+
+}
+
+.edit-profile-div button{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    color: rgb(45, 45, 45, 1);
+    padding: 8px;
+    width: 100%;
+}
+
+.level-div p{
+   color: antiquewhite;
+   font-size: 20px;
+   text-align: right;
+}
+
+
+
+.edit-profile-div button:hover{
+    background-color: rgb(248, 224, 193);
+}
+
+
+
+.net-icons img{
+    width: 40px;
+    cursor: pointer;
+}
+
+.recent-activity{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.recent-activity h3{
+    color: antiquewhite;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* activity and friend sections */
+
+.activity-div{
+    background:
+        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
+        linear-gradient(127deg, rgba(45, 45, 45), rgba(0, 255, 0, 0) 50%),
+        linear-gradient(336deg, rgba(250, 235, 215), rgba(0, 0, 255, 0) 50%);
+    border-radius: 10px;
+    padding: 10px;
+    width: min(1000px,100%);
+}
+
+
+.game-activity-div{
+    background:
+        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
+        linear-gradient(-217deg, rgba(29, 29, 29), rgba(0, 255, 0, 0) 96%);
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+    width: min(700px,100%);
+}
+
+.game-main-info-div{
+    display: flex;
+    column-gap: 20px;
+}
+.game-main-info-div img{
+    object-fit: cover;
+}
+.game-info-div{
+     padding-top: 10px;
+    color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.game-fav-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 200px;
+}
+
+.fa-heart{
+    font-size: 30px;
+    text-align: right;
+    color: antiquewhite;
+}
+.achivement-p{
+    margin-top: 20px;
+}
+.achivement-bar{
+    width: 100%;
+    height: 8px;
+    border-radius: 20px;
+    background: linear-gradient(90deg, rgb(161, 104, 29) 40%, rgba(29, 29, 29) 0%);
+
+}
+
+.elden-achivement{
+    background: linear-gradient(90deg, rgb(161, 104, 29) 76%, rgba(29, 29, 29) 0%);
+}
+
+.bloodborne-achivement{
+     background: linear-gradient(90deg, rgb(161, 104, 29) 100%, rgba(29, 29, 29) 0%);
 }

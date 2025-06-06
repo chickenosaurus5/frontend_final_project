@@ -1,67 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>gameline</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/profileStyle.css">
-    <script defer src="js/source.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/profileStyle.css" />
+    <script defer src="../js/source.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
     <header class="main-header">
-         <div class="logo">
-            <i class="fa-solid fa-gamepad"></i>
-            <h1 class="storeTitle">GAMELINE</h1>
-        </div>
-        <div class="navbar">
-            <ul class="navbar-list">
-                <li class="navbar-li dropdown-li ">
-                    <a class="navbar-item" href="../index.html">Store</a>
-                     <ul class="dropdown">
-                        <li class="drop-item"><a href="">Featured</a></li>
-                        <li class="drop-item"><a href="">Wishlist</a></li>
-                        <li class="drop-item"><a href="">News</a></li>
-                     </ul>
-                </li>
-                <li class="navbar-li dropdown-li">
-                    <a class="navbar-item " href="../libraryPage/library.html">Library</a>
-                     <ul class="dropdown">
-                        <li class="drop-item"><a href="">Home</a></li>
-                        <li class="drop-item"><a href="">Downloads</a></li>
-                     </ul>
-                </li>
-                <li class="navbar-li selected-tab"><a class="navbar-item" href="./profile.html">Profile</a></li>
+      <div class="logo">
+        <i class="fa-solid fa-gamepad"></i>
+        <h1 class="storeTitle">GAMELINE</h1>
+      </div>
+      <div class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-li dropdown-li">
+            <a class="navbar-item" href="../index.html">Store</a>
+            <ul class="dropdown">
+              <li class="drop-item"><a href="">Featured</a></li>
+              <li class="drop-item"><a href="">Wishlist</a></li>
+              <li class="drop-item"><a href="">News</a></li>
             </ul>
-        </div>
-        <div class="signin-bar">
-            <a class="navbar-item" href="../signinPage/signin.html">signin</a>
-            <i class="fa-solid fa-user-plus"></i>
-        </div>
+          </li>
+          <li class="navbar-li dropdown-li">
+            <a class="navbar-item" href="../libraryPage/library.html"
+              >Library</a
+            >
+            <ul class="dropdown">
+              <li class="drop-item"><a href="">Home</a></li>
+              <li class="drop-item"><a href="">Downloads</a></li>
+            </ul>
+          </li>
+          <li class="navbar-li selected-tab">
+            <a class="navbar-item" href="./profile.html">Profile</a>
+          </li>
+        </ul>
+      </div>
+      <div class="signin-bar">
+        <a class="navbar-item" href="../signinPage/signin.html">signin</a>
+        <i class="fa-solid fa-user-plus"></i>
+      </div>
     </header>
 
     <section class="profile-section">
-        <header class="profile-header">
-            <div class="profile-main-info-div">
-                <img src="../images/def_profile.jpg" alt="profilePic">
-                <div class="about-info-div">
-                    <h3>chickenosaurus</h3>
-                    <h5>About me:</h5>
-                    <p class="text">Lorem ipsum dolor sit amet consectetur, 
-                        adipisicing elit. At dolore obcaecati 
-                        exercitationem ut iusto qui itaque eveniet
-                         magni reiciendis est, voluptas placeat laborum 
-                         ab natus hic voluptates delectus ad praesentium?
-                         </p>
-                </div>
+      <header class="profile-header">
+        <div class="profile-main-info-div">
+          <img src="../images/def_profile.jpg" alt="profilePic" />
+          <div class="about-info-div">
+            <h3>Chickenosaurus</h3>
+            <h5>Georgia</h5>
+            <h5>I play games</h5>
+            <div class="net-icons">
+              <img src="../images/net.png" alt="net " />
+              <img src="../images/message.png" alt="message" />
             </div>
-            <div class="edit-profile-div">
+          </div>
+        </div>
+        <div class="extra-info-div">
+          <div class="level-div">
+            <p>Level: 15</p>
+          </div>
+          <div class="edit-profile-div"><button>Edit profile</button></div>
+        </div>
+      </header>
+      <!-- activity div -->
+      <div class="activity-div">
+        <div class="recent-activity">
+          <h3>Recent activity</h3>
+          <!-- first game -->
+          <div class="game-activity-div">
+            <div class="game-main-info-div">
+              <img src="../images/game_images/ds1.avif" alt="soulsPic" />
+              <div class="game-info-div">
+                <h3>Dark souls</h3>
+                <h5>Total in game: 35.1 hours</h5>
+                <h5>Last played: 01/07/24</h5>
+                <p class="achivement-p">achivements: 20/50</p>
+                <div class="achivement-bar"></div>
+              </div>
+            </div>
+            <div class="game-fav-div">
+              <i class="fa-regular fa-heart"></i>
+              <div class="edit-profile-div"><button>Launch</button></div>
+            </div>
+          </div>
+          <!-- second game -->
+          <div class="game-activity-div">
+            <div class="game-main-info-div">
+              <img src="../images/game_images/elden_ring.jpg" alt="soulsPic" />
+              <div class="game-info-div">
+                <h3>Elden Ring</h3>
+                <h5>Total in game: 100.6 hours</h5>
+                <h5>Last played: 01/05/24</h5>
+                <p class="achivement-p">achivements: 38/50</p>
+                <div class="achivement-bar elden-achivement"></div>
+              </div>
+            </div>
+            <div class="game-fav-div">
+              <i class="fa-regular fa-heart"></i>
+              <div class="edit-profile-div"><button>Launch</button></div>
+            </div>
+          </div>
+          <!-- third game -->
+          <div class="game-activity-div">
+            <div class="game-main-info-div">
+              <img src="../images/game_images/bloodborne.webp" alt="soulsPic" />
+              <div class="game-info-div">
+                <h3>Bloodborne</h3>
+                <h5>Total in game: 530.3 hours</h5>
+                <h5>Last played: 01/03/23</h5>
+                <p class="achivement-p">achivements: 50/50</p>
+                <div class="achivement-bar bloodborne-achivement"></div>
+              </div>
+            </div>
+            <div class="game-fav-div">
+              <i class="fa-regular fa-heart"></i>
+              <div class="edit-profile-div"><button>Launch</button></div>
+            </div>
+          </div>
+        </div>
 
-            </div>
-        </header>
+        <!-- friend's list -->
+      </div>
     </section>
-    
-</body>
+  </body>
 </html>
+
