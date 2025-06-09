@@ -1,12 +1,6 @@
-body{
-    background-image: url('../images/EldenRing-Wallpaper_5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
 .main-header{
     box-shadow: 0px 10px 30px black;
+    z-index: 1000;
 }
 
 .profile-section{
@@ -21,16 +15,15 @@ body{
 }
 
 .profile-header{
-    background:
-        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
-        linear-gradient(127deg, rgba(45, 45, 45), rgba(0, 255, 0, 0) 70%),
-        linear-gradient(336deg, rgba(250, 235, 215), rgba(0, 0, 255, 0) 80%);
+    background-image: url('../images/EldenRing-Wallpaper_5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    width: min(1000px,100%);
+    width: min(1200px,100%);
 }
 
 .profile-main-info-div{
@@ -82,12 +75,9 @@ body{
    text-align: right;
 }
 
-
-
 .edit-profile-div button:hover{
     background-color: rgb(248, 224, 193);
 }
-
 
 
 .net-icons img{
@@ -95,10 +85,24 @@ body{
     cursor: pointer;
 }
 
+
+/* activity and friend sections */
+
+.activity-div{
+    background-color: rgba(45, 45, 45, 1);
+    border-radius: 10px;
+    padding: 10px;
+    width: min(1200px,100%);
+    display: flex;
+    justify-content: space-between;  
+}
+
+
 .recent-activity{
     display: flex;
     flex-direction: column;
     row-gap: 30px;
+    width: min(1000px,100%);
 }
 
 .recent-activity h3{
@@ -107,29 +111,44 @@ body{
     font-size: 25px;
 }
 
-/* activity and friend sections */
-
-.activity-div{
-    background:
-        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
-        linear-gradient(127deg, rgba(45, 45, 45), rgba(0, 255, 0, 0) 50%),
-        linear-gradient(336deg, rgba(250, 235, 215), rgba(0, 0, 255, 0) 50%);
-    border-radius: 10px;
+.recent-game-activity{
+    border-top: solid rgb(83, 82, 82) 2px;
+    border-bottom: solid rgb(83, 82, 82) 2px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    overflow-y: scroll;
+    
     padding: 10px;
-    width: min(1000px,100%);
+    padding-right: 20px;
+    max-height: 100vh;
 }
 
+/* scroll bar style */
+.recent-game-activity::-webkit-scrollbar{
+    width: 10px;
+}
+.recent-game-activity::-webkit-scrollbar-thumb{
+    background: rgb(83, 82, 82);
+    border-radius: 20px;
+    margin-left: 5px;
+}
 
 .game-activity-div{
     background:
         linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
         linear-gradient(-217deg, rgba(29, 29, 29), rgba(0, 255, 0, 0) 96%);
+    background-color: rgb(71, 67, 67);
     padding: 20px;
     border-radius: 20px;
     display: flex;
     justify-content: space-between;
     
-    width: min(700px,100%);
+}
+.game-activity-div:hover{
+    box-shadow: 5px 5px 15px rgb(71, 67, 67);
+    transform: scale(1.024);
+    transition: 0.3s;
 }
 
 .game-main-info-div{
@@ -158,12 +177,13 @@ body{
     font-size: 30px;
     text-align: right;
     color: antiquewhite;
+    cursor: pointer;
 }
 .achivement-p{
     margin-top: 20px;
 }
 .achivement-bar{
-    width: 100%;
+    width: 90%;
     height: 8px;
     border-radius: 20px;
     background: linear-gradient(90deg, rgb(161, 104, 29) 40%, rgba(29, 29, 29) 0%);
@@ -176,4 +196,18 @@ body{
 
 .bloodborne-achivement{
      background: linear-gradient(90deg, rgb(161, 104, 29) 100%, rgba(29, 29, 29) 0%);
+}
+
+.sekiro-achivement{
+    background: linear-gradient(90deg, rgb(161, 104, 29) 25%, rgba(29, 29, 29) 0%);
+}
+
+
+/* friends and other information */
+.friends-div{
+    background-color: rgb(71, 67, 67);
+    width: min(300px,100%);
+    max-height: 100vh;
+    margin-left: 30px;
+    border-radius: 20px;
 }

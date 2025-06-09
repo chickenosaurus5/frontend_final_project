@@ -7,4 +7,3 @@ hearts.forEach(function(heart){
 })
 })
 
-
