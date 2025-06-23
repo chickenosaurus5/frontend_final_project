@@ -6,7 +6,7 @@
     <title>gameline</title>
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
-     <link rel="stylesheet" href="./css/storeStyle.css" />
+    <link rel="stylesheet" href="./css/storeStyle.css" />
     <script defer src="./js/source.js"></script>
     <link
       rel="stylesheet"
@@ -48,35 +48,69 @@
     </header>
 
     <section class="store-section">
+      <div class="search-bar">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Search store" />
+      </div>
       <div class="main-banner-wrapper">
         <div class="current-game-div">
-          <img src="./images/gow.jpg" alt="gow">
+          <img
+            id="game1"
+            src="./images/game_images/elden_ring.jpg"
+            alt="elden_ring_cover"
+          />
+          <img id="game2" src="./images/game_images/ds1.avif" alt="ds1_cover" />
+          <img
+            id="game3"
+            src="./images/game_images/bloodborneCover.webp"
+            alt="bloodborne_cover"
+          />
+          <img
+            id="game4"
+            src="./images/game_images/sekiroCover.webp"
+            alt="sekiro_cover"
+          />
         </div>
         <div class="games-list-div">
-          <div class="game-banner">
+          <a href="#game1" class="game-banner">
             <div class="loading-div"></div>
-            <img src="./images/gow-banner.jpg" alt="gow-small">
-            <p class="game-title">God of War 4</p>
-          </div>
-          <div class="game-banner">
+            <img
+              class="small-game-img"
+              src="./images/gow-banner.jpg"
+              alt="gow-small"
+            />
+            <p class="game-title">Elden Ring</p>
+          </a>
+          <a href="#game2" class="game-banner">
             <div class="loading-div"></div>
-            <img src="./images/gow-banner.jpg" alt="gow-small">
-            <p class="game-title">God of War 4</p>
-          </div>
-          <div class="game-banner">
+            <img
+              class="small-game-img"
+              src="./images/gow-banner.jpg"
+              alt="gow-small"
+            />
+            <p class="game-title">Dark souls 1</p>
+          </a>
+
+          <a href="#game3" class="game-banner">
             <div class="loading-div"></div>
-            <img src="./images/gow-banner.jpg" alt="gow-small">
-            <p class="game-title">God of War 4</p>
-          </div>
-          <div class="game-banner">
+            <img
+              class="small-game-img"
+              src="./images/gow-banner.jpg"
+              alt="gow-small"
+            />
+            <p class="game-title">BloodBorne</p>
+          </a>
+          <a href="#game4" class="game-banner">
             <div class="loading-div"></div>
-            <img src="./images/gow-banner.jpg" alt="gow-small">
-            <p class="game-title">God of War 4</p>
-          </div>
+            <img
+              class="small-game-img"
+              src="./images/gow-banner.jpg"
+              alt="gow-small"
+            />
+            <p class="game-title">Sekiro</p>
+          </a>
         </div>
       </div>
     </section>
-
-    
   </body>
 </html>
