@@ -8,10 +8,20 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/storeStyle.css" />
     <script defer src="./js/source.js"></script>
+    <script defer src="./js/api.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -47,68 +57,181 @@
       </div>
     </header>
 
-    <section class="store-section">
-      <div class="search-bar">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search store" />
+    <section class="store-banner-section">
+      <div class="searchbar-container">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search store" />
+        </div>
       </div>
       <div class="main-banner-wrapper">
+        <!-- amjamindeli tamashi -->
         <div class="current-game-div">
           <img
-            id="game1"
+            id="game"
             src="./images/game_images/elden_ring.jpg"
             alt="elden_ring_cover"
           />
-          <img id="game2" src="./images/game_images/ds1.avif" alt="ds1_cover" />
+          <img id="game" src="./images/game_images/ds1.avif" alt="ds1_cover" />
           <img
-            id="game3"
+            id="game"
             src="./images/game_images/bloodborneCover.webp"
             alt="bloodborne_cover"
           />
           <img
-            id="game4"
+            id="game"
             src="./images/game_images/sekiroCover.webp"
             alt="sekiro_cover"
           />
         </div>
+        <!-- momdevno tamashebis list  -->
         <div class="games-list-div">
-          <a href="#game1" class="game-banner">
+          <!-- pirveli tamashi -->
+          <div class="game-banner">
             <div class="loading-div"></div>
             <img
               class="small-game-img"
-              src="./images/gow-banner.jpg"
+              src="./images/elden_ring_banner.jpg"
               alt="gow-small"
             />
             <p class="game-title">Elden Ring</p>
-          </a>
-          <a href="#game2" class="game-banner">
+          </div>
+          <!-- meore tamashi -->
+          <div class="game-banner">
             <div class="loading-div"></div>
             <img
               class="small-game-img"
-              src="./images/gow-banner.jpg"
+              src="./images/darkSouls_banner.jpg"
               alt="gow-small"
             />
             <p class="game-title">Dark souls 1</p>
-          </a>
-
-          <a href="#game3" class="game-banner">
+          </div>
+          <!-- mesame tamashi -->
+          <div class="game-banner">
             <div class="loading-div"></div>
             <img
               class="small-game-img"
-              src="./images/gow-banner.jpg"
+              src="./images/bloodborne_banner.avif"
               alt="gow-small"
             />
             <p class="game-title">BloodBorne</p>
-          </a>
-          <a href="#game4" class="game-banner">
+          </div>
+          <!-- meotxe tamashi -->
+          <div class="game-banner">
             <div class="loading-div"></div>
             <img
               class="small-game-img"
-              src="./images/gow-banner.jpg"
+              src="./images/Sekiro_banner.jpg"
               alt="gow-small"
             />
             <p class="game-title">Sekiro</p>
-          </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="game-offers-section">
+      <div class='offers-title'>
+        <h2>Games on sale:</h2>
+        <div class="swiper-buttons">
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      </div>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+            
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
+
+          <div class="swiper-slide offer-game-banner">
+            <img
+              id = 'game-banner-img'
+              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
+              alt="doom"
+            />
+            <div class="game-info">
+              <h2 id="game-card-title"></h2>
+            </div>
+          </div>
         </div>
       </div>
     </section>
