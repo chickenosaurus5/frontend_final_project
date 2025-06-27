@@ -9,22 +9,21 @@
     <link rel="stylesheet" href="./css/storeStyle.css" />
     <script defer src="./js/source.js"></script>
     <script defer src="./js/api.js"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
 
-    <!-- Swiper CSS -->
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
 
-    <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </head>
   <body>
-    <header class="main-header">
+    <header id="mainHeader" class="main-header">
       <div class="logo">
         <i class="fa-solid fa-gamepad"></i>
         <h1 class="storeTitle">GAMELINE</h1>
@@ -55,6 +54,9 @@
         <a class="navbar-item" href="./signinPage/signin.html">signin</a>
         <i class="fa-solid fa-user-plus"></i>
       </div>
+      <div class="burgerbar">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </header>
 
     <section class="store-banner-section">
@@ -67,173 +69,172 @@
       <div class="main-banner-wrapper">
         <!-- amjamindeli tamashi -->
         <div class="current-game-div">
-          <img
-            id="game"
-            src="./images/game_images/elden_ring.jpg"
-            alt="elden_ring_cover"
-          />
-          <img id="game" src="./images/game_images/ds1.avif" alt="ds1_cover" />
-          <img
-            id="game"
-            src="./images/game_images/bloodborneCover.webp"
-            alt="bloodborne_cover"
-          />
-          <img
-            id="game"
-            src="./images/game_images/sekiroCover.webp"
-            alt="sekiro_cover"
-          />
+          <img id="game" src="./images/bloodborne_banner.avif" />
+          <img id="game" />
+          <img id="game" />
+          <img id="game" />
         </div>
         <!-- momdevno tamashebis list  -->
         <div class="games-list-div">
           <!-- pirveli tamashi -->
           <div class="game-banner">
             <div class="loading-div"></div>
-            <img
-              class="small-game-img"
-              src="./images/elden_ring_banner.jpg"
-              alt="gow-small"
-            />
-            <p class="game-title">Elden Ring</p>
+            <img class="small-game-img" />
+            <p class="game-title"></p>
           </div>
           <!-- meore tamashi -->
           <div class="game-banner">
             <div class="loading-div"></div>
-            <img
-              class="small-game-img"
-              src="./images/darkSouls_banner.jpg"
-              alt="gow-small"
-            />
-            <p class="game-title">Dark souls 1</p>
+            <img class="small-game-img" />
+            <p class="game-title"></p>
           </div>
           <!-- mesame tamashi -->
           <div class="game-banner">
             <div class="loading-div"></div>
-            <img
-              class="small-game-img"
-              src="./images/bloodborne_banner.avif"
-              alt="gow-small"
-            />
-            <p class="game-title">BloodBorne</p>
+            <img class="small-game-img" />
+            <p class="game-title"></p>
           </div>
           <!-- meotxe tamashi -->
           <div class="game-banner">
             <div class="loading-div"></div>
-            <img
-              class="small-game-img"
-              src="./images/Sekiro_banner.jpg"
-              alt="gow-small"
-            />
-            <p class="game-title">Sekiro</p>
+            <img class="small-game-img" />
+            <p class="game-title"></p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="game-offers-section">
-      <div class='offers-title'>
+      <div class="offers-title">
         <h2>Games on sale:</h2>
         <div class="swiper-buttons">
-        <div class="swiper-button-prev">
-          <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div class="swiper-button-next">
-          <i class="fa-solid fa-chevron-right"></i>
+          <div class="swiper-button-prev swiper-button-prev1">
+            <i class="fa-solid fa-chevron-left"></i>
+          </div>
+          <div class="swiper-button-next swiper-button-next1">
+            <i class="fa-solid fa-chevron-right"></i>
+          </div>
         </div>
       </div>
-      </div>
-      <div class="swiper">
+
+      <div class="swiper swiper1">
         <div class="swiper-wrapper">
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-          </div>
+          <!-- aq chaiyreba yvela game card js-idan -->
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination1"></div>
+    </section>
 
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
+    <section class="game-offers-section">
+      <div class="offers-title">
+        <h2>Top Rated:</h2>
+        <div class="swiper-buttons">
+          <div class="swiper-button-prev swiper-button-prev2">
+            <i class="fa-solid fa-chevron-left"></i>
           </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-            
-          </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
-          </div>
-
-          <div class="swiper-slide offer-game-banner">
-            <img
-              id = 'game-banner-img'
-              src="https://media.rawg.io/media/games/587/587588c64afbff80e6f444eb2e46f9da.jpg"
-              alt="doom"
-            />
-            <div class="game-info">
-              <h2 id="game-card-title"></h2>
-            </div>
+          <div class="swiper-button-next swiper-button-next2">
+            <i class="fa-solid fa-chevron-right"></i>
           </div>
         </div>
+      </div>
+
+      <div class="swiper swiper2">
+        <div class="swiper-wrapper">
+          <!-- aq chaiyreba yvela game card js-idan -->
+        </div>
+        <div class="swiper-pagination swiper-pagination2"></div>
       </div>
     </section>
+
+    <section class="game-columns-section swiper swiper3">
+      <div class="swiper-wrapper">
+        <div class="game-column swiper-slide">
+          <h2>Top Sellers ></h2>
+        </div>
+
+        <div class="game-column swiper-slide">
+          <h2>Top Wishlisted ></h2>
+        </div>
+
+        <div class="game-column swiper-slide">
+          <h2>Most Played ></h2>
+        </div>
+      </div>
+      <div class="swiper-pagination swiper-pagination3"></div>
+    </section>
   </body>
+
+  <footer>
+    <section class="footer-wrapper">
+      <section class="foot-top-sec">
+        <h2>STORE</h2>
+        <div class="brand-favicons">
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-x-twitter"></i>
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </section>
+
+      <section class="foot-mid-sec">
+        <div class="ul-div market-div">
+          <h2 class="ul-button">Marketplace</h2>
+          <ul class="Marketplace-ul expandable-list">
+            <li class="m-li"><a href="">Gameline Store</a></li>
+            <li class="m-li"><a href="">Fab</a></li>
+            <li class="m-li"><a href="">Sketchfab</a></li>
+            <li class="m-li"><a href="">Artstation</a></li>
+            <li class="m-li"><a href="">Store Refund Policy</a></li>
+            <li class="m-li"><a href="">Store EULA</a></li>
+          </ul>
+        </div>
+        <div class="ul-div os-div">
+          <h2 class="ul-button">Online Services</h2>
+          <ul class="os-ul expandable-list">
+            <li class="os-li"><a href="">Gameline Online Services</a></li>
+            <li class="os-li"><a href="">Kids Web Services</a></li>
+            <li class="os-li"><a href="">Services Agreement</a></li>
+            <li class="os-li"><a href="">Acceptable Use Policy</a></li>
+            <li class="os-li"><a href="">Trust Statement</a></li>
+            <li class="os-li"><a href="">Subprocessor List</a></li>
+          </ul>
+        </div>
+
+        <div class="ul-div com-div">
+          <h2 class="ul-button">Company</h2>
+          <ul class="com-ul expandable-list">
+            <li class="com-li"><a href="">About</a></li>
+            <li class="com-li"><a href="">Newsroom</a></li>
+            <li class="com-li"><a href="">Careers</a></li>
+            <li class="com-li"><a href="">Students</a></li>
+            <li class="com-li"><a href="">UX Reaserch</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="foot-bot-sec">
+        <div class="legal-info-div">
+          <p class="rights-text">
+            © 2025, Gameline, Inc. All rights reserved. Gameline, the Gameline
+            logo are trademarks or registered trademarks of Gameline, Inc. in
+            Georgia and elsewhere. Other brands or product names are the
+            trademarks of their respective owners. Our websites may contain
+            links to other sites and resources provided by third parties. These
+            links are provided for your convenience only. Gameline has no
+            control over the contents of those sites or resources, and accepts
+            no responsibility for them or for any loss or damage that may arise
+            from your use of them.
+          </p>
+          <ul class="terms-ul">
+            <li><a href="">Terms of Service</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Safety & security</a></li>
+            <li><a href="">Store refund poicy</a></li>
+            <li><a href="">Publisher Index</a></li>
+          </ul>
+        </div>
+
+        <button class="back-to-top-bttn">back to top</button>
+      </section>
+    </section>
+  </footer>
 </html>
