@@ -353,8 +353,7 @@ html,body{ scroll-behavior: smooth}
 
 #col-game-genre{
     font-size: 16px;
-    color:antiquewhite;
-    font-family: Roboto;
+    color:rgb(168, 168, 168);
     font-weight: 1;
 }
 
@@ -366,6 +365,10 @@ html,body{ scroll-behavior: smooth}
 @media only screen and (max-width: 1024px) {
     .games-list-div{
         display: none;
+    }
+    .current-game-div{
+        margin-left: 10px;
+        margin-right: 10px;
     }
     #col-game-nm{
         font-size: 20px;

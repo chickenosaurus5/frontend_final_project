@@ -101,6 +101,13 @@ mainSwiper[1].style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
 searchBarCont.style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
 gameColumns.style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
 
+window.addEventListener('resize',function(){
+  mainSwiper[0].style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
+  mainSwiper[1].style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
+  searchBarCont.style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
+  gameColumns.style.width = `min(${mainBannerWrapper.offsetWidth}px,100%)`;
+})
+
 const swiper1 = new Swiper(".swiper1", {
   speed: 900,
   slidesPerView: 4,
@@ -188,9 +195,41 @@ const swiper3 = new Swiper(".swiper3", {
       spaceBetween: 10,
     },
     730: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 15,
+    },
+    840:{
       slidesPerView: 3,
       slidesPerGroup: 1,
       spaceBetween: 15,
     },
   },
 });
+
+// burger bar logic
+
+let bBar = document.querySelector('.fa-bars')
+bBar.addEventListener('click',function(){
+  let sideBar = document.querySelector('.side-bar');
+   let mainBar = document.querySelector('.main-header');
+  let menuCover1 = document.querySelector('.menu-cover');
+  menuCover1.style.display = 'block';
+  if (menuCover1.classList.contains('menu-cover-anim-back')){
+     menuCover1.classList.remove('menu-cover-anim-back');
+  }
+  
+  sideBar.classList.add('side-bar-appear')
+  menuCover1.classList.add('menu-cover-anim');
+})
+
+let menuCover = document.querySelector('.menu-cover');
+
+
+menuCover.addEventListener('click',function(){
+  // menuCover.classList.add('menu-cover');
+  let sideBar = document.querySelector('.side-bar');
+  menuCover.classList.remove('menu-cover-anim');
+  menuCover.classList.add('menu-cover-anim-back');
+  sideBar.classList.remove('side-bar-appear');
+})

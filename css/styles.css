@@ -3,7 +3,8 @@
 
 body {
   background-color: rgb(29, 29, 29);
-  font-family: Roboto;
+  font-family: Lilita one;
+  position: relative;
 }
 
 .main-header {
@@ -13,8 +14,8 @@ body {
   padding: 10px 15px;
   display: flex;
   align-items: center;
-  /* position: sticky;
-  top: 0; */
+  position: sticky;
+  top: 0;
   width: 100%;
 }
 
@@ -53,6 +54,7 @@ body {
   font-size: 30px;
   color: antiquewhite;
   font-weight: 100;
+  font-family: Lilita one;
 }
 
 .navbar-item:hover {
@@ -87,6 +89,75 @@ body {
   font-size: 20px;
   color: antiquewhite;
 }
+
+
+
+.side-bar{
+  overflow:hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: rgba(37, 37, 37, 1);
+  z-index: 501;
+  transition: width 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.button-cont{
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.side-bar-appear{
+  padding: 30px;
+  width: 300px;
+}
+
+.menu-cover{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 500;
+  display: none;
+}
+
+.menu-cover-anim{
+  animation: loadIn 0.2s forwards cubic-bezier(0,0,0,0);
+}
+
+.menu-cover-anim-back{
+  animation: loadOut 0.2s forwards cubic-bezier(0,0,0,0);
+}
+
+@keyframes loadIn {
+            0% {
+                background: rgba(0, 0, 0, 0);
+                
+            }
+            100% {
+                background: rgba(0, 0, 0, 0.5);
+            }
+        }
+@keyframes loadOut {
+            0% {
+                background: rgba(0, 0, 0, 0.5);
+            }
+            100% {
+                background: rgba(0, 0, 0, 0);
+                display: none;
+            }
+        }
+
 
 /* dropdown-menu */
 .dropdown-li {
@@ -273,6 +344,9 @@ footer {
 .expandable-list.show{
   max-height: 500px;
 }
+
+
+
 
 @media only screen and (max-width: 841px) {
   .signin-bar {

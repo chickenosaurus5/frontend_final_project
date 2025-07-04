@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 body{
     background-color: rgb(29, 29, 29);
-    font-family: Roboto;
     display: flex;
     align-items: center;
 }
@@ -69,6 +68,7 @@ body{
     display: inline-block;
     width: 100%;
     outline: none;
+    font-family: Lilita one;
 }
 .input-field:not(:placeholder-shown):valid{
 
@@ -80,16 +80,17 @@ body{
     border-bottom: rgb(155, 37, 37) solid 2px; 
 }
 
-.submit-btn:hover{
-    cursor: pointer;
-}
+
 .submit-btn{
+    cursor: pointer;
     border: none;
     border-radius: 10px;
     font-size: 20px;
     background-color: antiquewhite;
     padding: 8px;
     width: 100%;
+    font-family: Lilita one;
+    color: rgb(49, 49, 49);
 }
 
 .submit-btn:hover{
@@ -102,27 +103,26 @@ body{
     display: flex;
     column-gap: 5px;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
 .line{
-    width: 100%;
+    width: 33%;
     border-bottom: antiquewhite solid 2px;
 }
 
 .register{
-    margin-left: 4px;
+    display: inline;
     font-size: 17px;
-    color: white;
-    width: 100%;
+    color: rgb(199, 199, 199);
+    font-family: Lilita one;
 }
 
 .home-icon{
     position: absolute;
     top: -20px;
     left: 20px;
-
-
 }
 
 
@@ -134,10 +134,12 @@ body{
 .terms-link{
     color: beige;
     text-decoration:underline;
+    
 }
 
 .termsOfService-div label{
-    color: white;
+    color: rgb(199, 199, 199);
+    font-family: Lilita one;
 }
 
 .birthDate-div{
@@ -148,17 +150,18 @@ body{
 }
 
 .birthDate-div label{
-    color: white;    
+    color: rgb(199, 199, 199); 
+    font-family: Lilita one;   
 }
 
 input[type="date"]{
-    color: beige;
+    color: rgb(199, 199, 199);
     background-color: rgb(29, 29, 29);
     border: none;
     padding: 8px;
-    /* border-radius: 10px; */
     outline: none;
     border-bottom: beige solid 2px;
+    font-family: Lilita one;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator{
@@ -170,3 +173,75 @@ input[type="date"]:not(:placeholder-shown):valid{
     transition: 0.5s;
     border-bottom: rgb(37, 182, 80) solid 2px; 
 }
+
+
+
+.home-btn{
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: antiquewhite;
+    padding: 8px;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+    font-family: Lilita one;
+    color: rgb(49, 49, 49);
+}
+
+@media only screen and (max-width: 1166px) {
+  body{
+    flex-direction: column;
+    row-gap: 30px;
+    justify-content: space-around;
+    
+  }
+  .home-icon{
+    display: none;
+  }
+  .home-btn{
+    display: flex;
+  }
+  .decore-section{
+    height: auto;
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 577px) {
+ .fa-house{
+    font-size: 50px;
+ }
+ .fa-gamepad{
+    font-size: 60px;
+ }
+ .storeTitle{
+    font-size: 60px;
+ }
+ .register{
+    font-size: 12px;
+ }
+
+
+}
+
+@media only screen and (max-width: 447px) {
+
+ .register{
+    font-size: 10px;
+ }
+
+}
+
+@media only screen and (max-width: 377px) {
+
+ .register{
+    font-size: 8px;
+ }
+
+}
+
