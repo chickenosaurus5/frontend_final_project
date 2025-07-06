@@ -30,7 +30,7 @@ function renderGameCards(wrapperIndex, startGameIndex, endGameIndex) {
     gameCardPrice.id = "game-card-price";
     offerGameBanner.classList.add("swiper-slide", "offer-game-banner");
     offerGameBanner.id = `${gamesApi[i].id}`;
-    offerGameBanner.href = '../gamePage/gamePage.html'
+    offerGameBanner.href = './gamePage/gamePage.html'
     gameInfoDiv.classList.add("game-info");
     gameBanner.id = "game-banner-img";
     
