@@ -6,12 +6,15 @@
     <title>gameline</title>
     <link rel="stylesheet" href="../css/reset.css" />
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/profileStyle.css" />
-    <script defer src="../js/source.js"></script>
+    <link rel="stylesheet" href="../css/gamePagestyle.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+
+    <script defer src="../js/source.js"></script>
+    <script defer src="../js/gameLoader.js"></script>
   </head>
   <body>
     <header class="main-header">
@@ -38,8 +41,10 @@
               <li class="drop-item"><a href="">Downloads</a></li>
             </ul>
           </li>
-          <li class="navbar-li selected-tab">
-            <a class="navbar-item" href="./profile.html">Profile</a>
+          <li class="navbar-li">
+            <a class="navbar-item" href="../profilepage/profile.html"
+              >Profile</a
+            >
           </li>
         </ul>
       </div>
@@ -66,115 +71,65 @@
       </div>
     </header>
 
-    <section class="profile-section">
-      <header class="profile-header">
-        <div class="profile-main-info-div">
-          <img src="../images/def_profile.jpg" alt="profilePic" />
-          <div class="about-info-div">
-            <h3>Chickenosaurus</h3>
-            <h5>Georgia</h5>
-            <h5>I play games</h5>
-            <div class="net-icons">
-              <img src="../images/net.png" alt="net " />
-              <img src="../images/message.png" alt="message" />
-            </div>
-          </div>
+    <section class="game-main-sec">
+      <div class="searchbar-container">
+        <div class="search-bar">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search store" />
         </div>
-        <div class="extra-info-div">
-          <div class="level-div">
-            <p>Level: 15</p>
-          </div>
-          <div class="edit-profile-div"><button>Edit profile</button></div>
-        </div>
-      </header>
-      <!-- activity div -->
-      <div class="activity-div">
-        <div class="recent-activity">
-          <h3>Recent activity</h3>
-          <div class="recent-game-activity">
-            <!-- first game -->
-            <div class="game-activity-div">
-              <div class="game-main-info-div">
-                <img src="../images/game_images/ds1.avif" alt="soulsPic" />
-                <div class="game-info-div">
-                  <h3>Dark souls</h3>
-                  <h5>Total in game: 35.1 hours</h5>
-                  <h5>Last played: 01/07/24</h5>
-                  <p class="achivement-p">achivements: 20/50</p>
-                  <div class="achivement-bar"></div>
-                </div>
-              </div>
-              <div class="game-fav-div">
-                <i class="fa-regular fa-heart"></i>
-                <div class="edit-profile-div"><button>Launch</button></div>
-              </div>
-            </div>
-            <!-- second game -->
-            <div class="game-activity-div">
-              <div class="game-main-info-div">
-                <img
-                  src="../images/game_images/elden_ring.jpg"
-                  alt="soulsPic"
-                />
-                <div class="game-info-div">
-                  <h3>Elden Ring</h3>
-                  <h5>Total in game: 100.6 hours</h5>
-                  <h5>Last played: 01/05/24</h5>
-                  <p class="achivement-p">achivements: 38/50</p>
-                  <div class="achivement-bar elden-achivement"></div>
-                </div>
-              </div>
-              <div class="game-fav-div">
-                <i class="fa-regular fa-heart"></i>
-                <div class="edit-profile-div"><button>Launch</button></div>
-              </div>
-            </div>
-            <!-- third game -->
-            <div class="game-activity-div">
-              <div class="game-main-info-div">
-                <img
-                  src="../images/game_images/bloodborne.webp"
-                  alt="soulsPic"
-                />
-                <div class="game-info-div">
-                  <h3>Bloodborne</h3>
-                  <h5>Total in game: 530.3 hours</h5>
-                  <h5>Last played: 01/03/23</h5>
-                  <p class="achivement-p">achivements: 50/50</p>
-                  <div class="achivement-bar bloodborne-achivement"></div>
-                </div>
-              </div>
-              <div class="game-fav-div">
-                <i class="fa-regular fa-heart"></i>
-                <div class="edit-profile-div"><button>Launch</button></div>
-              </div>
-            </div>
-            <!-- fourth game -->
-            <div class="game-activity-div">
-              <div class="game-main-info-div">
-                <img src="../images/game_images/sekiro.jpg" alt="soulsPic" />
-                <div class="game-info-div">
-                  <h3>Sekiro</h3>
-                  <h5>Total in game: 15.3 hours</h5>
-                  <h5>Last played: 01/03/22</h5>
-                  <p class="achivement-p">achivements: 9/50</p>
-                  <div class="achivement-bar sekiro-achivement"></div>
-                </div>
-              </div>
-              <div class="game-fav-div">
-                <i class="fa-regular fa-heart"></i>
-                <div class="edit-profile-div"><button>Launch</button></div>
-              </div>
-            </div>
-          </div>
-        </div>
+      </div>
 
-        <!-- friend's list -->
-        <div class="friends-div"></div>
+      <div class="main-banner-wrapper">
+        <div class="game-screenshots">
+          <div class="current-game-div">
+            <img id="game1" src="../images/bloodborne_banner.avif" />
+            <img id="game2" />
+            <img id="game3" />
+            <img id="game4" />
+          </div>
+
+          <div class="screen-list-wrapper">
+            <div class="prev-butn">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="screenshots-list">
+              <div class="box">1</div>
+              <div class="box">2</div>
+              <div class="box">3</div>
+              <div class="box">4</div>
+              <div class="box">5</div>
+              <div class="box">6</div>
+              <div class="box">7</div>
+              <div class="box">8</div>
+              <div class="box">9</div>
+              <div class="box">10</div>
+              <div class="box">11</div>
+              <div class="box">12</div>
+              <div class="box">13</div>
+              <div class="box">14</div>
+              <div class="box">15</div>
+              <div class="box">16</div>
+              <div class="box">17</div>
+              <div class="box">18</div>
+              <div class="box">19</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+              <div class="box">20</div>
+            </div>
+            <div class="next-butn">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
-    <footer>
+
+  <footer>
     <section class="footer-wrapper">
       <section class="foot-top-sec">
         <h2>STORE</h2>
@@ -229,7 +184,7 @@
             Georgia and elsewhere. Other brands or product names are the
             trademarks of their respective owners. Our websites may contain
             links to other sites and resources provided by third parties. These
-            links are provided for your convenience only. 
+            links are provided for your convenience only.
           </p>
           <ul class="terms-ul">
             <li><a href="">Terms of Service</a></li>

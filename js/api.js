@@ -21,7 +21,7 @@ function renderGameCards(wrapperIndex, startGameIndex, endGameIndex) {
   const gamesApi = JSON.parse(sessionStorage.getItem(`page-3-response`));
 
   for (let i = startGameIndex; i < endGameIndex; i++) {
-    let offerGameBanner = document.createElement("div");
+    let offerGameBanner = document.createElement("a");
     let gameBanner = document.createElement("img");
     let gameInfoDiv = document.createElement("div");
     let gameCardTitle = document.createElement("h2");
@@ -29,12 +29,15 @@ function renderGameCards(wrapperIndex, startGameIndex, endGameIndex) {
 
     gameCardPrice.id = "game-card-price";
     offerGameBanner.classList.add("swiper-slide", "offer-game-banner");
+    offerGameBanner.id = `${gamesApi[i].id}`;
+    offerGameBanner.href = '../gamePage/gamePage.html'
     gameInfoDiv.classList.add("game-info");
     gameBanner.id = "game-banner-img";
-
+    
     gameBanner.src = `${gamesApi[i].background_image}`;
     gameBanner.alt = `${gamesApi[i].slug}`;
     gameCardTitle.textContent = `${gamesApi[i].name}`;
+
 
     if (sessionStorage.getItem(`${gamesApi[i].name}-priceResponse`) === null) {
       fetch(

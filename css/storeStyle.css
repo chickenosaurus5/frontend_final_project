@@ -219,15 +219,14 @@ html,body{ scroll-behavior: smooth}
 
 #game-card-title{
     color: antiquewhite;
-    font-family: Lilita One;
-    font-weight: 1;
+    font-family: Karla;
     font-size: 20px;
+    font-weight: 300;
 }
 
 #game-card-price{
     color: rgb(255, 145, 0);
-    font-family: Lilita One;
-    font-weight: 1;
+    font-family: Karla;
     font-size: 20px;
 }
 
@@ -253,8 +252,7 @@ html,body{ scroll-behavior: smooth}
     font-size: 30px;
     color:antiquewhite;
     padding-bottom: 20px;
-    font-family: Lilita One;
-    font-weight: 9;
+    font-family: Lilita one;
 }
 .swiper-buttons{
     display: flex;
@@ -316,8 +314,8 @@ html,body{ scroll-behavior: smooth}
 .game-column h2{
     font-size: 25px;
     color:antiquewhite;
-    font-family: Lilita One;
-    font-weight: 100;
+    font-family: Lilita one;
+    font-weight: 500;
 }
 
 .col-game-card{
@@ -345,16 +343,17 @@ html,body{ scroll-behavior: smooth}
 
 
 #col-game-nm{
-    font-size: 25px;
+    font-size: 20px;
     color:antiquewhite;
-    font-family: Lilita One;
-    font-weight: 9;
+    font-family: Karla;
+    font-weight: 300;
+    
 }
 
 #col-game-genre{
     font-size: 16px;
+    font-family: Karla;
     color:rgb(168, 168, 168);
-    font-weight: 1;
 }
 
 

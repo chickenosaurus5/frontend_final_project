@@ -1,0 +1,130 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 220px;
+  background-color: rgba(45, 45, 45, 1);
+  padding-left: 12px;
+  column-gap: 8px;
+  border-radius: 200px;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  outline: none;
+  height: 75%;
+  background-color: rgba(45, 45, 45, 1);
+  color: rgb(199, 199, 199);
+  border: none;
+}
+.search-bar:hover input {
+  background-color: rgb(65, 65, 65);
+}
+.search-bar:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.search-bar input::placeholder {
+  color: gray;
+}
+
+.fa-magnifying-glass {
+  font-size: 12px;
+  color: gray;
+}
+
+
+.game-screenshots{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+}
+.current-game-div {
+  cursor: pointer;
+  border-radius: 20px;
+  display: flex;
+  overflow-x: scroll;
+  max-width: 70rem;
+  aspect-ratio: 16/9;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+.current-game-div img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  height: auto;
+  /* border-radius: 20px; */
+  width: 100%;
+}
+
+.current-game-div::-webkit-scrollbar {
+  display: none;
+}
+
+.prev-butn{
+  width: 50px;
+  height: 50px;
+   display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.next-butn{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.fa-chevron-right,
+.fa-chevron-left{
+  font-size: 40px;
+  color: rgb(255, 145, 0);
+}
+
+.fa-chevron-right:hover{
+  cursor: pointer;
+  transform: translate(5px);
+  transition: 0.2s cubic-bezier(0,0,0,0);
+}
+.fa-chevron-left:hover{
+  cursor: pointer;
+  transform: translate(-5px);
+  transition: 0.2s cubic-bezier(0,0,0,0);
+}
+
+.screenshots-list{
+  display: flex;
+  column-gap: 20px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.screen-list-wrapper{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.screenshots-list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.box{
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  flex: 1 0 100px;
+  scroll-snap-align: start;
+}
+
+
+footer {
+  display: none;
+}
