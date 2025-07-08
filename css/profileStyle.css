@@ -1,214 +1,426 @@
-html,body{ scroll-behavior: smooth}
-.main-header{
-    /* box-shadow: 0px 10px 30px black; */
-    z-index: 1000;
+html,
+body {
+  scroll-behavior: smooth;
+}
+.main-header {
+  /* box-shadow: 0px 10px 30px black; */
+  z-index: 1000;
 }
 
-.profile-section{
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
+.profile-section {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.profile-header {
+  background-color: rgb(37, 37, 37);
+  /* background-image: url("../images/EldenRing-Wallpaper_5.jpg"); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: min(1200px, 100%);
+}
+
+.profile-main-info-div {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.profile-section img {
+  max-width: 184px;
+  border-radius: 10px;
+}
+
+.about-info-div {
+  padding-top: 10px;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+.info-wrapper{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 30px;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.info-wrapper h3 {
+  font-size: 25px;
 }
 
-.profile-header{
-    background-image: url('../images/EldenRing-Wallpaper_5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    width: min(1200px,100%);
+.extra-info-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
 }
 
-.profile-main-info-div{
-    display: flex;
-    column-gap: 20px;
+.edit-profile-div button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  background-color: antiquewhite;
+  color: rgb(45, 45, 45, 1);
+  padding: 8px;
+  width: 100%;
 }
 
-
-.profile-section img{
-    max-width: 184px;
-    border-radius: 10%;
+.level-div p {
+  color: antiquewhite;
+  font-size: 20px;
+  text-align: right;
 }
 
-
-.about-info-div{
-    padding-top: 10px;
-    color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
+.edit-profile-div button:hover {
+  background-color: rgb(248, 224, 193);
 }
 
-.about-info-div h3{
-    font-size: 25px;
+.net-icons img {
+  width: 40px;
+  cursor: pointer;
 }
-
-.extra-info-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
-
-}
-
-.edit-profile-div button{
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-    font-size: 20px;
-    background-color: antiquewhite;
-    color: rgb(45, 45, 45, 1);
-    padding: 8px;
-    width: 100%;
-}
-
-.level-div p{
-   color: antiquewhite;
-   font-size: 20px;
-   text-align: right;
-}
-
-.edit-profile-div button:hover{
-    background-color: rgb(248, 224, 193);
-}
-
-
-.net-icons img{
-    width: 40px;
-    cursor: pointer;
-}
-
 
 /* activity and friend sections */
 
-.activity-div{
-    background-color: rgb(27, 27, 27);
-    border-radius: 10px;
-    padding: 10px;
-    width: min(1200px,100%);
-    display: flex;
-    justify-content: space-between;  
+.activity-div {
+  /* background-color: rgb(27, 27, 27); */
+  border-radius: 10px;
+  padding: 10px;
+  width: min(1200px, 100%);
+  display: flex;
+  justify-content: space-between;
 }
 
-
-.recent-activity{
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    width: min(1000px,100%);
+.recent-activity {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  width: min(1000px, 100%);
 }
 
-.recent-activity h3{
-    color: antiquewhite;
-    font-weight: 600;
-    font-size: 25px;
+.recent-activity h3 {
+  color: antiquewhite;
+  font-weight: 600;
+  font-size: 25px;
 }
 
-.recent-game-activity{
-    border-top: solid rgb(83, 82, 82) 2px;
-    border-bottom: solid rgb(83, 82, 82) 2px;
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-    overflow-y: scroll;
-    
-    padding: 10px;
-    padding-right: 20px;
-    max-height: 500px;
+.recent-game-activity {
+  border-top: solid rgb(83, 82, 82) 2px;
+  border-bottom: solid rgb(83, 82, 82) 2px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  overflow-y: scroll;
+
+  padding: 10px;
+  padding-right: 20px;
+  max-height: 500px;
 }
 
 /* scroll bar style */
-.recent-game-activity::-webkit-scrollbar{
-    width: 10px;
+.recent-game-activity::-webkit-scrollbar {
+  width: 10px;
 }
-.recent-game-activity::-webkit-scrollbar-thumb{
-    background: rgb(83, 82, 82);
-    border-radius: 20px;
-    margin-left: 5px;
-}
-
-.game-activity-div{
-    background:
-        linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
-        linear-gradient(-217deg, rgb(27, 27, 27), rgba(0, 255, 0, 0) 96%);
-    background-color: rgb(71, 67, 67);
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    
-}
-.game-activity-div:hover{
-    /* box-shadow: 5px 5px 15px rgb(71, 67, 67); */
-    transform: scale(1.024);
-    transition: 0.3s;
+.recent-game-activity::-webkit-scrollbar-thumb {
+  background: rgb(83, 82, 82);
+  border-radius: 20px;
+  margin-left: 5px;
 }
 
-.game-main-info-div{
-    display: flex;
-    column-gap: 20px;
+.game-activity-div {
+  /* background: linear-gradient(217deg, rgba(255, 145, 0), rgba(255, 0, 0, 0) 50%),
+    linear-gradient(-217deg, rgb(27, 27, 27), rgba(0, 255, 0, 0) 96%); */
+  /* background-color: rgb(71, 67, 67); */
+  background-color: rgba(37, 37, 37, 1);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-.game-main-info-div img{
-    object-fit: cover;
-}
-.game-info-div{
-     padding-top: 10px;
-    color: antiquewhite;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.game-fav-div{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 200px;
+.game-activity-div:hover {
+  /* box-shadow: 5px 5px 15px rgb(71, 67, 67); */
+  transform: scale(1.024);
+  transition: 0.3s;
 }
 
-.fa-heart{
-    font-size: 30px;
-    text-align: right;
-    color: antiquewhite;
-    cursor: pointer;
+.game-main-info-div {
+  display: flex;
+  column-gap: 20px;
 }
-.achivement-p{
-    margin-top: 20px;
+.game-main-info-div img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
-.achivement-bar{
-    width: 90%;
-    height: 8px;
-    border-radius: 20px;
-    background: linear-gradient(90deg, rgb(161, 104, 29) 40%, rgba(29, 29, 29) 0%);
-
-}
-
-.elden-achivement{
-    background: linear-gradient(90deg, rgb(161, 104, 29) 76%, rgba(29, 29, 29) 0%);
+.game-info-div {
+  padding-top: 10px;
+  color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
-.bloodborne-achivement{
-     background: linear-gradient(90deg, rgb(161, 104, 29) 100%, rgba(29, 29, 29) 0%);
+.game-fav-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 200px;
 }
 
-.sekiro-achivement{
-    background: linear-gradient(90deg, rgb(161, 104, 29) 25%, rgba(29, 29, 29) 0%);
+.fa-heart {
+  font-size: 30px;
+  text-align: right;
+  color: antiquewhite;
+  cursor: pointer;
+}
+.achivement-p {
+  margin-top: 20px;
+}
+.achivement-bar {
+  width: 90%;
+  height: 8px;
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgb(161, 104, 29) 40%,
+    rgba(29, 29, 29) 0%
+  );
 }
 
+.elden-achivement {
+  background: linear-gradient(
+    90deg,
+    rgb(161, 104, 29) 76%,
+    rgba(29, 29, 29) 0%
+  );
+}
+
+.bloodborne-achivement {
+  background: linear-gradient(
+    90deg,
+    rgb(161, 104, 29) 100%,
+    rgba(29, 29, 29) 0%
+  );
+}
+
+.sekiro-achivement {
+  background: linear-gradient(
+    90deg,
+    rgb(161, 104, 29) 25%,
+    rgba(29, 29, 29) 0%
+  );
+}
 
 /* friends and other information */
-.friends-div{
-    background-color: rgba(37, 37, 37, 1);
-    width: min(300px,100%);
-    max-height: 100vh;
-    margin-left: 30px;
-    border-radius: 10px;
+.friends-div {
+  flex-shrink: 0;
+  /* background-color: rgba(37, 37, 37, 1); */
+  width: 300px;
+  max-height: 100vh;
+  margin-left: 30px;
+  /* padding: 20px; */
+  /* padding-top: 10px; */
+}
+
+.friends-header {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.friend-list-title {
+  color: antiquewhite;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 30px;
+  color: antiquewhite;
+  font-family: Karla;
+}
+
+.fa-plus {
+  cursor: pointer;
+  color: antiquewhite;
+  font-size: 25px;
+}
+
+.friend-ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  overflow-y: scroll;
+  height: 500px;
+  border-top: solid rgb(83, 82, 82) 2px;
+  border-bottom: solid rgb(83, 82, 82) 2px;
+  padding: 10px;
+  position: relative;
+}
+
+.friend-ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+.friend-ul::-webkit-scrollbar-thumb {
+  background: rgb(83, 82, 82);
+  border-radius: 20px;
+  margin-left: 5px;
+}
+
+.friend-li {
+  background-color: rgba(37, 37, 37, 1);
+  padding: 10px 5px 10px 5px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.friend-li p {
+  color: rgb(241, 241, 241);
+}
+
+.alone-indicator {
+  color: rgb(241, 241, 241);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.friend-li img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+.friend-adding-tab {
+  width: 700px;
+  height: 500px;
+  background-color: rgba(37, 37, 37, 1);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3000;
+  display: none;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  width: 220px;
+  background-color: rgba(45, 45, 45, 1);
+  padding-left: 12px;
+  column-gap: 8px;
+  border-radius: 200px;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  outline: none;
+  height: 75%;
+  background-color: rgba(45, 45, 45, 1);
+  color: rgb(199, 199, 199);
+  border: none;
+}
+.search-bar:hover input {
+  background-color: rgb(65, 65, 65);
+}
+.search-bar:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.search-bar input::placeholder {
+  color: gray;
+}
+
+@media only screen and (max-width: 972px) {
+  .activity-div {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .friends-div {
+    width: 100%;
+    margin-left: 0;
+  }
+  .profile-section {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  .game-activity-div {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .game-fav-div {
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    column-gap: 20px;
+    height: auto;
+  }
+
+  
+
+  .about-info-div h3 {
+    font-size: 20px;
+  }
+  .about-info-div h5 {
+    font-size: 15px;
+  }
+  .game-activity-div {
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 438px) {
+  .game-main-info-div {
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+  }
+    .game-fav-div {
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .profile-main-info-div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+  }
+  .about-info-div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .profile-header {
+    justify-content: center;
+  }
+
+  .net-icons{
+    display: flex;
+    flex-direction: column;
+    
+  }
 }

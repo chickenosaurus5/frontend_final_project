@@ -29,6 +29,10 @@ for (const [index, banner] of banners.entries()) {
         left: currg.clientWidth * index,
         behavior: "smooth",
       });
+    }else{
+      let loadingDivs = document.querySelectorAll('.loading-div');
+      sessionStorage.setItem("gameid", JSON.stringify(loadingDivs[index].id));
+      window.location.href = loadingDivs[index].href;
     }
   });
 }

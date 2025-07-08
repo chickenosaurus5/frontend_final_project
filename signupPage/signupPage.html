@@ -1,51 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>signin</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/signinStyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/signinStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <script defer src="../js/formValidationSignUp.js"></script>
+  </head>
+  <body>
     <section class="decore-section">
-        <div class="decore-div">
-            <div class="home-icon">
-            <a href="../index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-            </div>
-            <i class="fa-solid fa-gamepad"></i>
-            <h1 class="storeTitle">GAMELINE</h1>
+      <div class="decore-div">
+        <div class="home-icon">
+          <a href="../index.html">
+            <i class="fa-solid fa-house"></i>
+          </a>
         </div>
+        <i class="fa-solid fa-gamepad"></i>
+        <h1 class="storeTitle">GAMELINE</h1>
+      </div>
     </section>
     <section class="form-section">
-        <h3 class="form-title">Sign Up</h3>
-        <form class="form-class">
-            <input class="input-field" type="text" id="username" name="username" placeholder="Username" required>
-            <input class="input-field" type="email" id="email-field" name="email" placeholder="Email" required>
-            <input class="input-field" type="password" id="pass-field" name="password" placeholder="Password" required>
-            <input class="input-field" type="password" id="pass-field" name="password" placeholder="Repeat password" required>
-            <div class="birthDate-div">
-                <label for="birthdate">Birthday:</label>
-                <input type="date" id="birthdate" name="birthdate" required>
-            </div>
-            <div class="termsOfService-div">
-                <input type="checkbox" id="term-accept" name="term-checkbox" required>
-                <label for="term-accept">I accept <a class='terms-link' href="./terms.html" target="_blank">The terms of Service</a></label>
-            </div>
-            
-            <button class="submit-btn" type="submit" id="submit-btn" name="submit-btn">sign up</button>
-            
-        </form>
-               <div class="divider">
-            <div class="line"></div>
-            <a class="register" href="../signinPage/signin.html">Back to Sign in</a>
-            <div class="line"></div>
+      <h3 class="form-title">Sign Up</h3>
+      <form class="form-class form-signup-class" novalidate>
+        <label class="form-error" id="usrnm-error"></label>
+        <input
+          class="input-field"
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+        />
+        <label class="form-error" id="email-error"></label>
+        <input
+          class="input-field"
+          type="email"
+          id="email-field"
+          name="email"
+          placeholder="Email"
+        />
+
+        <label class="form-error pass-error" id="pass-error"></label>
+        <input
+          class="input-field"
+          type="password"
+          id="pass-field"
+          name="password"
+          placeholder="Password"
+        />
+
+        <label class="form-error" id="pas-rep-error"></label>
+        <input
+          class="input-field"
+          type="password"
+          id="pass-rep-field"
+          name="password"
+          placeholder="Repeat password"
+        />
+
+        
+        <div class="birthDate-div">
+          <label id='birth-label'for="birthdate">Birthday:</label>
+          <label class="form-error" id="birth-error"></label>
+          <input type="date" id="birthdate" name="birthdate" />
         </div>
-        <a href='../index.html'class="home-btn" type="submit" id="submit-btn" name="submit-btn">Back Home</a>
- 
+        
+
+        <label class="form-error " id="terms-error"></label>
+        <div class="termsOfService-div">
+          <input type="checkbox" id="term-accept" name="term-checkbox" />
+          <label for="term-accept">I accept<a class="terms-link" href="./terms.html" target="_blank">The terms of Service</a></label>
+        </div>
+        <div class="eye-wrapper">
+          <div class="show-hide-div">
+            <i class="fa-solid fa-eye"></i>
+            <i class="fa-solid fa-eye-slash"></i>
+          </div>
+          <div class="pass-status">Show password</div>
+        </div>
+
+        <button
+          class="submit-btn"
+          type="submit"
+          id="submit-btn"
+          name="submit-btn"
+        >
+          sign up
+        </button>
+      </form>
+      <div class="divider">
+        <div class="line"></div>
+        <a class="register" href="../signinPage/signin.html">Back to Sign in</a>
+        <div class="line"></div>
+      </div>
+      <a
+        href="../index.html"
+        class="home-btn"
+        type="submit"
+        id="submit-btn"
+        name="submit-btn"
+        >Back Home</a
+      >
     </section>
-</body>
+  </body>
 </html>

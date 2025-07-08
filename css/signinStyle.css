@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 body{
     background-color: rgb(29, 29, 29);
@@ -31,7 +31,7 @@ body{
     backdrop-filter: blur(5px);
     text-shadow: 3px 3px 1px beige;
     width: 100%;
-    font-family: Lilita One;
+    font-family: Lilita one;
     position: relative;
 }
 
@@ -49,13 +49,20 @@ body{
 
 .form-title{
     color: rgb(250, 235, 215);
-    font-family: Lilita One;
+    font-family: Karla;
     font-size: 50px;
 }
 
 .form-class{
     padding: 10px;
 }
+
+.form-error{
+    color: rgb(190, 38, 38);
+    font-size: 15px;
+    font-family: Karla;
+}
+
 
 .input-field{
     font-size: 20px;
@@ -68,16 +75,7 @@ body{
     display: inline-block;
     width: 100%;
     outline: none;
-    font-family: Lilita one;
-}
-.input-field:not(:placeholder-shown):valid{
-
-    transition: 0.5s;
-    border-bottom: rgb(37, 182, 80) solid 2px; 
-}
-.input-field:not(:placeholder-shown):invalid{
-    transition: 0.5s;
-    border-bottom: rgb(155, 37, 37) solid 2px; 
+    font-family: Karla;
 }
 
 
@@ -89,7 +87,7 @@ body{
     background-color: antiquewhite;
     padding: 8px;
     width: 100%;
-    font-family: Lilita one;
+    font-family: Karla;
     color: rgb(49, 49, 49);
 }
 
@@ -116,7 +114,7 @@ body{
     display: inline;
     font-size: 17px;
     color: rgb(199, 199, 199);
-    font-family: Lilita one;
+    font-family: Karla;
 }
 
 .home-icon{
@@ -124,6 +122,37 @@ body{
     top: -20px;
     left: 20px;
 }
+
+
+
+
+.eye-wrapper{
+    display: flex;
+    column-gap: 20px;
+}
+
+.pass-status{
+    font-size: 18px;
+    font-family: Karla;
+    color:antiquewhite;
+}
+
+.show-hide-div,
+.show-hide-div-rep{
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 20px;
+    height: 20px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
 
 
 .termsOfService-div{
@@ -137,9 +166,11 @@ body{
     
 }
 
+
+
 .termsOfService-div label{
     color: rgb(199, 199, 199);
-    font-family: Lilita one;
+    font-family: Karla;
 }
 
 .birthDate-div{
@@ -149,9 +180,9 @@ body{
     row-gap: 10px;
 }
 
-.birthDate-div label{
+#birth-label{
     color: rgb(199, 199, 199); 
-    font-family: Lilita one;   
+    font-family: Karla;   
 }
 
 input[type="date"]{
@@ -161,7 +192,7 @@ input[type="date"]{
     padding: 8px;
     outline: none;
     border-bottom: beige solid 2px;
-    font-family: Lilita one;
+    font-family: Karla;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator{
@@ -169,10 +200,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
     border-radius: 50%;
 }
 
-input[type="date"]:not(:placeholder-shown):valid{
-    transition: 0.5s;
-    border-bottom: rgb(37, 182, 80) solid 2px; 
-}
+
 
 
 
@@ -188,7 +216,7 @@ input[type="date"]:not(:placeholder-shown):valid{
     justify-content: space-around;
     align-items: center;
     display: none;
-    font-family: Lilita one;
+    font-family: Karla;
     color: rgb(49, 49, 49);
 }
 
@@ -224,6 +252,9 @@ input[type="date"]:not(:placeholder-shown):valid{
  }
  .register{
     font-size: 12px;
+ }
+ .form-error{
+    font-size: 15px;
  }
 
 

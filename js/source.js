@@ -46,15 +46,15 @@ mDiv.firstElementChild.addEventListener("click", function () {
 let bBar = document.querySelector('.fa-bars')
 bBar.addEventListener('click',function(){
   let sideBar = document.querySelector('.side-bar');
-   let mainBar = document.querySelector('.main-header');
-  let menuCover1 = document.querySelector('.menu-cover');
-  menuCover1.style.display = 'block';
-  if (menuCover1.classList.contains('menu-cover-anim-back')){
-     menuCover1.classList.remove('menu-cover-anim-back');
+  //  let mainBar = document.querySelector('.main-header');
+  let menucover = document.querySelector('.menu-cover');
+  menucover.style.display = 'block';
+  if (menucover.classList.contains('menu-cover-anim-back')){
+     menucover.classList.remove('menu-cover-anim-back');
   }
   
   sideBar.classList.add('side-bar-appear')
-  menuCover1.classList.add('menu-cover-anim');
+  menucover.classList.add('menu-cover-anim');
 })
 
 let menuCover = document.querySelector('.menu-cover');
@@ -67,3 +67,7 @@ menuCover.addEventListener('click',function(){
   menuCover.classList.add('menu-cover-anim-back');
   sideBar.classList.remove('side-bar-appear');
 })
+
+
+// friend adding logic
+

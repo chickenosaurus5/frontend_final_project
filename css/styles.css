@@ -4,7 +4,7 @@
 
 body {
   background-color: rgb(29, 29, 29);
-  /* font-family: Lilita one; */
+  /* font-family: Karla; */
   font-family: Karla;
   position: relative;
 }
@@ -19,6 +19,7 @@ body {
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 2000;
 }
 
 /* logo and name */
@@ -30,7 +31,7 @@ body {
 }
 .storeTitle {
   font-size: 20px;
-  font-family: Lilita One;
+  font-family: Lilita one;
 }
 
 .fa-gamepad {
@@ -55,8 +56,8 @@ body {
 .navbar-item {
   font-size: 30px;
   color: antiquewhite;
-  font-weight: 100;
-  font-family: Lilita one;
+  font-weight: 800;
+  font-family: Karla;
 }
 
 .navbar-item:hover {
@@ -108,7 +109,6 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  
 }
 
 .button-cont{
@@ -386,7 +386,7 @@ footer {
   .ul-button {
   cursor: pointer;
   
-  width: 300px;
+  width: 280px;
 
 }
 }

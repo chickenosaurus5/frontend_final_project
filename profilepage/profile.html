@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/profileStyle.css" />
     <script defer src="../js/source.js"></script>
+    <script defer src="../js/friendAddLogic.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -29,15 +30,6 @@
               <li class="drop-item"><a href="">News</a></li>
             </ul>
           </li>
-          <li class="navbar-li dropdown-li">
-            <a class="navbar-item" href="../libraryPage/library.html"
-              >Library</a
-            >
-            <ul class="dropdown">
-              <li class="drop-item"><a href="">Home</a></li>
-              <li class="drop-item"><a href="">Downloads</a></li>
-            </ul>
-          </li>
           <li class="navbar-li selected-tab">
             <a class="navbar-item" href="./profile.html">Profile</a>
           </li>
@@ -50,13 +42,10 @@
       <div class="burgerbar">
         <i class="fa-solid fa-bars"></i>
       </div>
-      <div class="menu-cover">
-        <div class="close-menu"></div>
-      </div>
+      <div class="menu-cover"></div>
       <div class="side-bar">
         <div class="button-cont">
           <a class="navbar-item" href="../index.html">Store</a>
-          <a class="navbar-item" href="../libraryPage/library.html">Library</a>
           <a class="navbar-item" href="./profile.html">Profile</a>
         </div>
         <div class="signin-cont">
@@ -69,23 +58,28 @@
     <section class="profile-section">
       <header class="profile-header">
         <div class="profile-main-info-div">
-          <img src="../images/def_profile.jpg" alt="profilePic" />
+          <img
+            src="https://api.dicebear.com/9.x/pixel-art/svg?seed=2sfda23"
+            alt="profilePic"
+          />
           <div class="about-info-div">
-            <h3>Chickenosaurus</h3>
-            <h5>Georgia</h5>
-            <h5>I play games</h5>
+            <div class="info-wrapper">
+              <h3>Chickenosaurus</h3>
+              <h5>Georgia</h5>
+              <h5>I play games</h5>
+            </div>
             <div class="net-icons">
               <img src="../images/net.png" alt="net " />
               <img src="../images/message.png" alt="message" />
             </div>
           </div>
         </div>
-        <div class="extra-info-div">
+        <!-- <div class="extra-info-div">
           <div class="level-div">
             <p>Level: 15</p>
           </div>
           <div class="edit-profile-div"><button>Edit profile</button></div>
-        </div>
+        </div> -->
       </header>
       <!-- activity div -->
       <div class="activity-div">
@@ -170,11 +164,21 @@
         </div>
 
         <!-- friend's list -->
-        <div class="friends-div"></div>
+        <div class="friends-div">
+          <div class="friends-header">
+            <h2 class="friend-list-title">Friends</h2>
+            <i class="fa-solid fa-plus"></i>
+          </div>
+
+          <ul class="friend-ul">
+            <p class="alone-indicator">No friends</p>
+          </ul>
+        </div>
       </div>
     </section>
   </body>
-    <footer>
+
+  <footer>
     <section class="footer-wrapper">
       <section class="foot-top-sec">
         <h2>STORE</h2>
@@ -226,10 +230,7 @@
           <p class="rights-text">
             © 2025, Gameline, Inc. All rights reserved. Gameline, the Gameline
             logo are trademarks or registered trademarks of Gameline, Inc. in
-            Georgia and elsewhere. Other brands or product names are the
-            trademarks of their respective owners. Our websites may contain
-            links to other sites and resources provided by third parties. These
-            links are provided for your convenience only. 
+            Georgia and elsewhere.
           </p>
           <ul class="terms-ul">
             <li><a href="">Terms of Service</a></li>

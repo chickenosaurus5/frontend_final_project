@@ -248,8 +248,8 @@ function renderMetaData() {
   devName.textContent = `${gamesApi.developers[0].name}`;
   gamesApi.platforms.forEach((element) => {
     platStr += element.platform.name + "/";
-    platf.textContent = `${platStr}`;
   });
+  platf.textContent = `${platStr}`;
 
   pubName.textContent = `${gamesApi.publishers[0].name}`;
   relDate.textContent = `${gamesApi.released}`;
@@ -316,3 +316,5 @@ function renderAchivs() {
     achiWrap.appendChild(noAchiWarning);
   }
 }
+
+

@@ -6,10 +6,12 @@ function renderMainBanner() {
   let games = document.querySelectorAll("#game");
   let nextGames = document.querySelectorAll(".small-game-img");
   let gameTitles = document.querySelectorAll(".game-title");
-
+  let loadingDivs = document.querySelectorAll('.loading-div');
   const gamesApi = JSON.parse(sessionStorage.getItem(`page-3-response`));
 
   for (let i = 0; i < 4; i++) {
+    loadingDivs[i].id = `${gamesApi[i].id}`;
+    loadingDivs[i].href = './gamePage/gamePage.html';
     games[i].src = `${gamesApi[i].background_image}`;
     nextGames[i].src = `${gamesApi[i].background_image}`;
     gameTitles[i].textContent = `${gamesApi[i].name}`;
@@ -119,7 +121,7 @@ function renderGameColumns(){
 
     for(let i = 0; i < 12; i++){
         
-        let  colGameCard = document.createElement("div");
+        let  colGameCard = document.createElement("a");
         let colGameImg = document.createElement("img");
         let colGameInfoDiv = document.createElement("div");
         let gameCardTitle = document.createElement("h2");
@@ -131,6 +133,8 @@ function renderGameColumns(){
         gameCardTitle.id = 'col-game-nm'
         gameGenre.id = 'col-game-genre'
 
+        colGameCard.id = `${gamesApi[i].id}`;
+        colGameCard.href = './gamePage/gamePage.html';
         colGameImg.src = `${gamesApi[i].background_image}`;
         gameCardTitle.textContent = `${gamesApi[i].name}`;
 

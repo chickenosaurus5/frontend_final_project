@@ -252,7 +252,8 @@ html,body{ scroll-behavior: smooth}
     font-size: 30px;
     color:antiquewhite;
     padding-bottom: 20px;
-    font-family: Lilita one;
+    font-family: Karla;
+    font-weight: 700;
 }
 .swiper-buttons{
     display: flex;
@@ -314,7 +315,7 @@ html,body{ scroll-behavior: smooth}
 .game-column h2{
     font-size: 25px;
     color:antiquewhite;
-    font-family: Lilita one;
+    font-family: Karla;
     font-weight: 500;
 }
 
