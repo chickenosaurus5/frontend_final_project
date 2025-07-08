@@ -8,6 +8,7 @@ let intId = setInterval(() => {
 
 for (const [index, banner] of banners.entries()) {
   banner.addEventListener("click", function () {
+    console.log('clicked')
     if (!banner.classList.contains("game-banner-clicked")) {
       clearInterval(intId);
       intId = setInterval(() => {

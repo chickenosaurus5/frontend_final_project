@@ -363,9 +363,8 @@ html,body{ scroll-behavior: smooth}
 /* responsive */
 
 @media only screen and (max-width: 1024px) {
-    .games-list-div{
-        display: none;
-    }
+
+
     .current-game-div{
         margin-left: 10px;
         margin-right: 10px;
@@ -376,6 +375,39 @@ html,body{ scroll-behavior: smooth}
 }
     
 @media only screen and (max-width: 841px) {
+        .games-list-div{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+        .main-banner-wrapper{
+            row-gap: 30px;
+        flex-direction: column;
+    }
+    #col-game-nm{
+        font-size: 15px;
+    }
+    #col-game-genre{
+        font-size: 14px;
+    }
+    .swiper-buttons{
+        display: none;
+    }
+    .swiper-pagination{
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width: 470px) {
+        .games-list-div{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+        .main-banner-wrapper{
+            row-gap: 30px;
+        flex-direction: column;
+    }
     #col-game-nm{
         font-size: 15px;
     }
