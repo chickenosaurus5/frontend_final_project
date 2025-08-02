@@ -32,10 +32,17 @@ function renderGameCards(wrapperIndex, startGameIndex, endGameIndex) {
     gameCardPrice.id = "game-card-price";
     offerGameBanner.classList.add("swiper-slide", "offer-game-banner");
     offerGameBanner.id = `${gamesApi[i].id}`;
-    offerGameBanner.href = './gamePage/gamePage.html'
+    offerGameBanner.href = './gamePage/gamePage.html';
     gameInfoDiv.classList.add("game-info");
     gameBanner.id = "game-banner-img";
-    
+   
+    offerGameBanner.addEventListener("click", function (e) {
+      e.preventDefault();
+      console.log('clicking banner')
+      sessionStorage.setItem("gameid", JSON.stringify(offerGameBanner.id));
+      window.location.href = this.href;
+    });
+
     gameBanner.src = `${gamesApi[i].background_image}`;
     gameBanner.alt = `${gamesApi[i].slug}`;
     gameCardTitle.textContent = `${gamesApi[i].name}`;
@@ -127,11 +134,11 @@ function renderGameColumns(){
         let gameCardTitle = document.createElement("h2");
         let gameGenre = document.createElement("p");
 
-        colGameCard.classList.add('col-game-card')
-        colGameImg.id = 'col-game-img'
-        colGameInfoDiv.classList.add('col-game-info')
-        gameCardTitle.id = 'col-game-nm'
-        gameGenre.id = 'col-game-genre'
+        colGameCard.classList.add('col-game-card');
+        colGameImg.id = 'col-game-img';
+        colGameInfoDiv.classList.add('col-game-info');
+        gameCardTitle.id = 'col-game-nm';
+        gameGenre.id = 'col-game-genre';
 
         colGameCard.id = `${gamesApi[i].id}`;
         colGameCard.href = './gamePage/gamePage.html';
@@ -143,6 +150,11 @@ function renderGameColumns(){
         }
 
 
+        colGameCard.addEventListener("click", function (e) {
+          e.preventDefault();
+          sessionStorage.setItem("gameid", JSON.stringify(colGameCard.id));
+          window.location.href = this.href;
+        });
 
         colGameInfoDiv.appendChild(gameCardTitle);
         colGameInfoDiv.appendChild(gameGenre);
